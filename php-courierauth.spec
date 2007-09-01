@@ -6,7 +6,7 @@
 Summary:	Courierauth bindings for PHP
 Name:		php-%{modname}
 Version:	0.1.0
-Release:	%mkrel 5
+Release:	%mkrel 6
 Group:		Development/PHP
 License:	BSD-like
 URL:		http://pecl.php.net/package/courierauth
@@ -24,15 +24,7 @@ Provides means for authentication against any courier authdaemond backends.
 [ "../package*.xml" != "/" ] && mv ../package*.xml .
 
 %build
-export CFLAGS="%{optflags}"
-export CXXFLAGS="%{optflags}"
-export FFLAGS="%{optflags}"
-
-%if %mdkversion >= 200710
-export CFLAGS="$CFLAGS -fstack-protector"
-export CXXFLAGS="$CXXFLAGS -fstack-protector"
-export FFLAGS="$FFLAGS -fstack-protector"
-%endif
+%serverbuild
 
 phpize
 %configure2_5x --with-libdir=%{_lib} \
