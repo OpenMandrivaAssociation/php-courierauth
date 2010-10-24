@@ -6,7 +6,7 @@
 Summary:	Courierauth bindings for PHP
 Name:		php-%{modname}
 Version:	0.1.0
-Release:	%mkrel 19
+Release:	%mkrel 20
 Group:		Development/PHP
 License:	BSD-like
 URL:		http://pecl.php.net/package/courierauth
