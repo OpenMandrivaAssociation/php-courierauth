@@ -9,7 +9,7 @@ Version:	0.1.0
 Release:	%mkrel 28
 Group:		Development/PHP
 License:	BSD-like
-URL:		http://pecl.php.net/package/courierauth
+URL:		https://pecl.php.net/package/courierauth
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	courier-authlib-devel
